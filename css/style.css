@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: cyan;
+    
+    padding: 50px; 
+
+}
+
+
+.titulo{
+    color: black;
+    text-align: left;
+    font-style: italic;
+    font-size: xx-large;
+    
+
+}
+
+.navT{
+    background-color: rgb(128, 128, 128);
+    padding: 10px;
+}
+
+.navT div ul li a{
+    text-decoration: none;
+}
+
+.barraNav{
+    color: white;
+    display: inline-block;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+    margin-left: 250px;
+
+}
+.foto{
+    content-visibility: 100px;
+}
+
+.imagenes__prin{
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+    
+    display: inline-block;
+}
+
+
+.sub__prin{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.piepag{
+    
+    background-color: rgb(179, 174, 174);
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+.derechos{
+    text-align: center;
+}
+
+.titcent{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.sub__prin1{
+    padding: 5px 5px 5px 5px;
+    margin-top: 5px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+}
+
+.pago_envio{
+    padding: 5px 5px 5px 5px;
+    margin: 5px 250px 5px 250px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sub__prin1--izq{
+    padding: 5px 5px 5px 5px;
+    margin: 5px 250px 10px 250px;
+}
+
+.prod{
+    display: inline-block;
+}
+
+.desc{
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.contacto{
+    text-align: start;
+    padding: 10px 10px 10px 10px;
+    border: 5px 5px 5px 5px;
+    margin: 15px 585px 15px 500px;
+
+}
+
+.formulario{
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+

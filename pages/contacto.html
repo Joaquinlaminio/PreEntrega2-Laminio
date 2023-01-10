@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Tienda de Ropa</h1>
+    </header>
+
+    <nav class="navT">
+        <div> 
+            <ul>
+                <li class="barraNav"><a href="../index.html">Inicio</a></li>
+                <li class="barraNav"><a href="./pages/Productos.html">Productos</a></li>
+                <li class="barraNav"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <p>Teléfono: 123456789</p>
+            <p>Email: TM@gmail.com</p>
+            <p>Dirección: La Plata 1900</p>
+        </section>
+        <section class="contacto">
+            <form class="formulario" action="">
+                <div>
+                    <p>Nombre:</p>
+                    <label for="nombre"><input required type="text" name="nombre" id="nombre"></label>
+                </div>
+                <div>
+                    <p>Email:</p>
+                    <label for="email"><input required type="email" name="email" id="email"></label>
+                </div>
+                <div>
+                    <p>Teléfono</p>
+                    <label for="telefono"><input type="number" name="telefono" id="telefono"></label>
+                </div>
+                <div>
+                    <p>Mensaje:</p>
+                    <textarea required name="mensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="piepag">
+
+        <H2>Ayuda</H2>
+        <ul>
+            <li><a href="../pages/QuienesSomos.html">Quienes Somos</a></li>
+            <li><a href="../pages/PagosEnvios.html">Pagos y Envíos</a></li>
+        </ul>
+        <h2>Contáctanos</h2>
+        <ul>
+            <li>Numero: 123456789</li>
+            <li>Dirección: La Plata 1900</li>
+            <li>Email: TM@gmail.com</li>
+        </ul>
+        <div>
+            <a href="http://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p class="derechos">&copy; Todos los Drechos reservados</p>
+
+    </footer>
+
+</body>
+</html>
