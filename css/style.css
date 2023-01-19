@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+#PagPrin{
+    display: grid;
+
+    grid-template-areas:    "encabezado" "encabezado"  "encabezado"
+                            "navegacion" "navegacion"  "navegacion"
+                            "principal"  "principal"   "principal"
+                            "pie"        "pie"         "pie";
+    
+    
+}
+
 header{
     background-color: cyan;
     
