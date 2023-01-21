@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,46 +28,138 @@
             <div>
                 <ul>
                     <li class="barraNav"><a href="./index.html">Inicio</a></li>
-                    <li class="barraNav"><a href="./pages/Productos.html">Productos</a></li>
-                    <li class="barraNav"><a href="./pages/Contacto.html">Contacto</a></li>
+                    <li class="barraNav"><a href="./pages/productos.html">Productos</a></li>
+                    <li class="barraNav"><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>
 
-        <main>
-            <h2 class="sub__prin">CONOCÉ NUESTROS ULTIMOS INGRESOS</h2>
-            <div class="imagenes__prin">
-                <section>
-                    <a href="./pages/Productos.html"><img src="./assets/img/remera blanca.jpg" alt=""></a>
-                    <a href="./pages/Productos.html"><img src="./assets/img/shortnaranja.jpg" alt=""></a>
-                </section>
-            </div>
+        <main id="prinMain">
+            <section class="new">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h2 class="sub__prin">Mirá nuestros ultimos ingresos</h2>
+                            <img src="./assets/img/remeraAzul.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>New Open Seasson</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h2 class="sub__prin">Mirá nuestros ultimos ingresos</h2>
+                            <img src="./assets/img/shortnaranja.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>New Open Seasson</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h2 class="sub__prin">Mirá nuestros ultimos ingresos</h2>
+                            <img src="./assets/img/zapatillaNaranja.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>New Open Seasson</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="bot">
+                    <button type="button" class="btn btn-dark btn-lg"><a href="./pages/productos.html">Conocé Más</a></button>
+                </div>
+            </section>
+            <section class="ofer">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <h2 class="sub__prin">Conocé nuestras ofertas especiales</h2>
+                        <h3 class="sub__prin">Hasta 50% OFF en productos Seleccionados</h3>
+                        <div class="carousel-item active">
+                            <img src="./assets/img/remerNegra.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/shortColores.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/ZapatillasVerdes.jpg" class="d-block w-100" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="bot">
+                    <button type="button" class="btn btn-dark btn-lg"><a href="./pages/productos.html">Conocé Más</a></button>
+                </div>
+            </section>
+            <section class="produ">
+                <h2 class="sub__prin">Nuestros Productos</h2>
+                <div class="imgProd">
+                    <a href="./pages/productos.html"><img src="./assets/img/remeraGris.jpg" alt="remera"></a>
+                </div>
+                <div class="imgProd">
+                    <a href="./pages/productos.html"><img src="./assets/img/shortNegro.jpg" alt="short"></a>
+                </div>
+                <div class="imgProd">
+                    <a href="./pages/productos.html"><img src="./assets/img/zapatillablanca.jpg" alt="zapatilla"></a>
+                </div>
+            </section>
+
         </main>
 
         <footer class="piepag">
-
-            <H2>Ayuda</H2>
-            <ul>
-                <li><a href="./pages/QuienesSomos.html">Quienes Somos</a></li>
-                <li><a href="./pages/PagosEnvios.html">Pagos y Envíos</a></li>
-            </ul>
-            <h2>Contáctanos</h2>
-            <ul>
-                <li>Numero: 123456789</li>
-                <li>Dirección: La Plata 1900</li>
-                <li>Email: TM@gmail.com</li>
-            </ul>
-            <div>
+            <p class="derechos">&copy; Todos los Drechos reservados</p>
+            <div class="help">
+                <H2>Ayuda</H2>
+                <ul>
+                    <li><a href="./pages/quienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="./pages/PagosEnvios.html">Pagos y Envíos</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contáctanos</h2>
+                <ul>
+                    <li>Numero: 123456789</li>
+                    <li>Dirección: La Plata 1900</li>
+                    <li>Email: TM@gmail.com</li>
+                </ul>
+            </div>
+            <div class="red">
+                <h2>Sigamos en contacto</h2>
                 <a href="http://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-whatsapp"></i></a>
                 <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><i
                         class="fa-brands fa-instagram"></i></a>
             </div>
-            <p class="derechos">&copy; Todos los Drechos reservados</p>
+
 
         </footer>
 
-    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
