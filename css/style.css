@@ -18,9 +18,7 @@ header{
     color: black;
     text-align: left;
     font-style: italic;
-    font-size: xx-large;
-    
-
+    font-size: xx-large;    
 }
 
 .navT{
@@ -99,7 +97,7 @@ footer ul li a{
 
 .pago_envio{
     padding: 5px 5px 5px 5px;
-    margin: 5px 250px 5px 250px;
+    margin: 5px 250px 0px 250px;
     font-family: 'Roboto', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -238,4 +236,127 @@ h5{
 
 #nosotros{
     background-color: rgb(118, 245, 245);
+}
+
+#prinPagos{
+    background-color: rgb(118, 245, 245);
+}
+
+#pagPrin{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+    header{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .titulo{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-align: start;
+    font-style: italic;
+    font-size: xx-large;    
+    }
+
+    .navT{
+        width: 100%;
+        padding-top: 1rem;
+        background-color: rgb(128, 128, 128);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .barraNav{
+        padding: 0;
+        margin:0;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    .navT div ul li a{
+        margin: 5px;
+    }
+
+    #contac{
+        width: 100%;
+        background-color: rgb(118, 245, 245);
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+    }
+
+    form{
+        padding-bottom: 10px;
+    }
+
+    .contacto1{
+        margin: 10px;
+    }
+
+    .contacto{
+        margin: 5px;
+    }
+
+    .piepag{
+        width: 100%;
+        display: grid;
+        grid-template-areas:    "contacta ayuda"
+                                "redes redes"
+                                "dere dere";
+    }
+    
+    p{
+        margin-bottom: 0;
+    }
+
+    .derechos{
+        grid-area: dere;
+        align-items: center;
+    }
+
+    .contact{
+        grid-area: contacta;
+        margin: 10px;
+    }
+
+    .help{
+        grid-area: ayuda;
+        margin: 10px 15px 10px 10px;
+    }
+
+    .red{
+        grid-area: redes;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    #prinProd{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .tamaño{
+        width: 100%;
+    }
+
+    .remeras{
+        padding: 5px;
+    }
+
+    .short{
+        padding: 5px;
+    }
+
+    .zapas{
+        padding: 5px;
+    }
 }
