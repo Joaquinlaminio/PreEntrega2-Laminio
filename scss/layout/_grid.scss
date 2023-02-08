@@ -1,0 +1,26 @@
+#prinMain{
+    display: grid;
+    grid-template-areas:    "nuevo prod"
+                            "oferta prod";
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $secondary;
+
+}
+
+#contac{
+    display: grid;
+
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 600px;
+    background-color: $secondary;
+    padding-right: 10px;
+}
+
+#pagPrin{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}

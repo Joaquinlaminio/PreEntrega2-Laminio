@@ -1,0 +1,7 @@
+.tamaño{
+    height: 300px;
+    width: 440px;
+        &:hover{
+            transform: scale(1.1);
+    }
+}
