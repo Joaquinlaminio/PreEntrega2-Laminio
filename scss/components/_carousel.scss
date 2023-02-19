@@ -1,15 +1,25 @@
 .new{
-    grid-area: nuevo;
+    padding: 1rem 0 1rem 0;
     justify-self: center;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 
 }
 
 .ofer{
-    grid-area: oferta;
+    padding:1rem 0 1rem 0;
     justify-self: center;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .produ{
-    grid-area: prod;
+    padding: 1rem 0 1rem 0;
     justify-self: center;  
 }

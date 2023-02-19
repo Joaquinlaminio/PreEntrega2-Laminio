@@ -17,9 +17,13 @@
         width: 100%;
         padding-top: 1rem;
         background-color: $navegation;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        div ul{
+            display: flex;
+            flex-direction: column;
+            a{
+                padding: 10px;
+            }
+        }
     }
 
     .barraNav{
@@ -109,38 +113,37 @@
         margin: 5px;
     }
 
-    .piepag{
+    footer{
         width: 100%;
         display: grid;
-        grid-template-areas:    "contacta ayuda"
-                                "redes redes"
-                                "dere dere";
+        grid-template-areas:    "contacto"
+                                "redes"
+                                "derechos";
+        
+    }
+
+    .contact{
+        grid-area: contacto;
+        justify-self: center;
+        padding: 10px;
+    }
+
+    .red{
+        grid-area: redes;
+        justify-self: center;
+        padding: 10px;
+    }
+
+    .derechos{
+        grid-area: derechos;
+        justify-self: center;
+        padding: 10px;
     }
     
     p{
         margin-bottom: 0;
     }
 
-    .derechos{
-        grid-area: dere;
-        align-items: center;
-    }
-
-    .contact{
-        grid-area: contacta;
-        margin: 10px;
-    }
-
-    .help{
-        grid-area: ayuda;
-        margin: 10px 15px 10px 10px;
-    }
-
-    .red{
-        grid-area: redes;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
 
     #prinProd{
         width: 100%;
@@ -159,5 +162,9 @@
 
     .zapas{
         padding: 5px;
+    }
+
+    .tamaño:hover{
+        transform: scale(0.0);
     }
 }

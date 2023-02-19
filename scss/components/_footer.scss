@@ -1,28 +1,32 @@
-footer ul{
+footer{
+    display: grid;
+    grid-template-areas:    "contacto      redes"
+                            "derechos derechos";
+    background-color: $footer;
+    ul{
     padding: 0;
         li{
             list-style-type: none;
-            a{
-                color: black;
-                text-decoration: none;
+        
         }
     }
 }
 
-.derechos{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-left: 5px;
-}
-
-.piepag{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: $footer;
-}
+.contact{
+    grid-area: contacto;
+    justify-self: center;
+}   
 
 .red{
-    margin-right: 5px;
+    grid-area: redes;
+    justify-self: center;
+    a{
+        color: black;
+        font-size: xx-large;
+    }
+}
+
+.derechos{
+    grid-area: derechos;
+    justify-self: center;
 }

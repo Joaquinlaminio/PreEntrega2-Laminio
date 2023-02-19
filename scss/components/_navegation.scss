@@ -1,13 +1,19 @@
 .navT{
     background-color: $navegation;
     padding: 10px;  
+    text-align: center;
         div ul{
             padding: 0;
+            margin-top: 1rem;
             li{
                 list-style-type: none;
+                margin: 15px;
                 a{
                     color: black;
-                    text-decoration: none;                
+                    text-decoration: none;
+                    padding: 10px;
+                    font-size: large;     
+                    
             }
         }
     }
@@ -15,10 +21,6 @@
 
 .barraNav{
     display: inline-block;
-    padding: 0;
-    margin-top: 5px;
-    margin-right: 50px;
-    margin-bottom: 5px;
-    margin-left: 250px;
+    
 
 }

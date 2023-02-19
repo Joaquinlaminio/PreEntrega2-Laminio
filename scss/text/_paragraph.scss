@@ -1,8 +1,13 @@
 .pago_envio{
     color: black;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 250px 0px 250px;
-    font-family: 'Roboto', sans-serif;
+    text-align:left;
+    font-family: 'Roboto';
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+    font-size: large;
+    
 }
 
 .desc{
@@ -11,4 +16,8 @@
         li{
             list-style-type: none;
     }
+}
+
+p{
+    margin-bottom: 0;
 }

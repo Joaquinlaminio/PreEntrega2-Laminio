@@ -10,7 +10,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 25px 5px 25px;
 }
 
 .short {
@@ -18,7 +18,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 25px 5px 25px;
 }
 
 .zapas {
@@ -26,16 +26,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 25px 5px 25px;
 }
 
 #prinMain {
   display: grid;
-  grid-template-areas: "nuevo prod" "oferta prod";
-  grid-template-columns: 50% 50%;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: 10px;
+  grid-template-columns: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: rgb(165, 241, 241);
@@ -44,9 +40,11 @@
 #contac {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 600px;
+  grid-template-rows: auto;
   background-color: rgb(165, 241, 241);
   padding-right: 10px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 #pagPrin {
@@ -56,7 +54,15 @@
 
 header {
   background-color: cyan;
-  padding: 50px;
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+}
+header a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
 }
 
 #prinProd {
@@ -64,64 +70,66 @@ header {
 }
 
 #nosotros {
-  background-color: rgb(165, 241, 241);
+  background: radial-gradient(white, rgb(165, 241, 241));
 }
 
 #prinPagos {
-  background-color: rgb(165, 241, 241);
+  background: radial-gradient(white, rgb(165, 241, 241));
 }
 
 .navT {
   background-color: rgb(128, 128, 128);
   padding: 10px;
+  text-align: center;
 }
 .navT div ul {
   padding: 0;
+  margin-top: 1rem;
 }
 .navT div ul li {
   list-style-type: none;
+  margin: 15px;
 }
 .navT div ul li a {
   color: black;
   text-decoration: none;
+  padding: 10px;
+  font-size: large;
 }
 
 .barraNav {
   display: inline-block;
-  padding: 0;
-  margin-top: 5px;
-  margin-right: 50px;
-  margin-bottom: 5px;
-  margin-left: 250px;
 }
 
+footer {
+  display: grid;
+  grid-template-areas: "contacto      redes" "derechos derechos";
+  background-color: rgb(179, 174, 174);
+}
 footer ul {
   padding: 0;
 }
 footer ul li {
   list-style-type: none;
 }
-footer ul li a {
-  color: black;
-  text-decoration: none;
-}
 
-.derechos {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 5px;
-}
-
-.piepag {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgb(179, 174, 174);
+.contact {
+  grid-area: contacto;
+  justify-self: center;
 }
 
 .red {
-  margin-right: 5px;
+  grid-area: redes;
+  justify-self: center;
+}
+.red a {
+  color: black;
+  font-size: xx-large;
+}
+
+.derechos {
+  grid-area: derechos;
+  justify-self: center;
 }
 
 .titulo {
@@ -140,6 +148,7 @@ footer ul li a {
 .sub__prin {
   text-align: center;
   padding: 10px 0px 10px 0px;
+  font-size: xx-large;
 }
 
 .sub__prin1 {
@@ -151,8 +160,7 @@ footer ul li a {
 }
 
 .sub__prin1--izq {
-  padding: 5px 5px 5px 5px;
-  margin: 5px 250px 10px 250px;
+  text-align: center;
 }
 
 .contacto1 {
@@ -166,9 +174,13 @@ h5 {
 
 .pago_envio {
   color: black;
-  padding: 5px 5px 5px 5px;
-  margin: 5px 250px 0px 250px;
-  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-family: "Roboto";
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0;
+  font-size: large;
 }
 
 .desc {
@@ -177,6 +189,10 @@ h5 {
 }
 .desc li {
   list-style-type: none;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .imagenes__prin {
@@ -192,17 +208,27 @@ h5 {
 }
 
 .new {
-  grid-area: nuevo;
+  padding: 1rem 0 1rem 0;
   justify-self: center;
+}
+.new a {
+  text-decoration: none;
+  color: black;
 }
 
 .ofer {
-  grid-area: oferta;
+  padding: 1rem 0 1rem 0;
   justify-self: center;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.ofer a {
+  text-decoration: none;
+  color: black;
 }
 
 .produ {
-  grid-area: prod;
+  padding: 1rem 0 1rem 0;
   justify-self: center;
 }
 
@@ -217,8 +243,8 @@ h5 {
 }
 
 .tamaño {
-  height: 300px;
-  width: 440px;
+  height: auto;
+  width: auto;
 }
 .tamaño:hover {
   transform: scale(1.1);
@@ -246,9 +272,13 @@ h5 {
     width: 100%;
     padding-top: 1rem;
     background-color: rgb(128, 128, 128);
+  }
+  .navT div ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+  }
+  .navT div ul a {
+    padding: 10px;
   }
   .barraNav {
     padding: 0;
@@ -319,30 +349,28 @@ h5 {
   .contacto {
     margin: 5px;
   }
-  .piepag {
+  footer {
     width: 100%;
     display: grid;
-    grid-template-areas: "contacta ayuda" "redes redes" "dere dere";
-  }
-  p {
-    margin-bottom: 0;
-  }
-  .derechos {
-    grid-area: dere;
-    align-items: center;
+    grid-template-areas: "contacto" "redes" "derechos";
   }
   .contact {
-    grid-area: contacta;
-    margin: 10px;
-  }
-  .help {
-    grid-area: ayuda;
-    margin: 10px 15px 10px 10px;
+    grid-area: contacto;
+    justify-self: center;
+    padding: 10px;
   }
   .red {
     grid-area: redes;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    justify-self: center;
+    padding: 10px;
+  }
+  .derechos {
+    grid-area: derechos;
+    justify-self: center;
+    padding: 10px;
+  }
+  p {
+    margin-bottom: 0;
   }
   #prinProd {
     width: 100%;
@@ -357,5 +385,8 @@ h5 {
   }
   .zapas {
     padding: 5px;
+  }
+  .tamaño:hover {
+    transform: scale(0);
   }
 }/*# sourceMappingURL=main.css.map */

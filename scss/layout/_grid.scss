@@ -1,10 +1,6 @@
 #prinMain{
     display: grid;
-    grid-template-areas:    "nuevo prod"
-                            "oferta prod";
-    grid-template-columns: 50% 50%;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: $secondary;
@@ -15,9 +11,11 @@
     display: grid;
 
     grid-template-columns: 30% 70%;
-    grid-template-rows: 600px;
+    grid-template-rows: auto;
     background-color: $secondary;
     padding-right: 10px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 #pagPrin{

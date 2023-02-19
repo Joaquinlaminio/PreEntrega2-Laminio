@@ -1,7 +1,7 @@
 .tamaño{
-    height: 300px;
-    width: 440px;
+    height: auto;
+    width: auto;
         &:hover{
-            transform: scale(1.1);
+            transform:scale(1.1);
     }
 }

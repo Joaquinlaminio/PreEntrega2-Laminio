@@ -1,4 +1,12 @@
 header{
     background-color: $primary;
-    padding: 50px; 
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
 }
